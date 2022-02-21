@@ -18,3 +18,15 @@ spring:
 logging:
   level:
     root: info
+
+# 服务注册地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: spring-cloud-provider-dept-8001
+
+info:
+  app.name: provider-dept
+  owner.name: qin

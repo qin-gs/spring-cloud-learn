@@ -11,6 +11,9 @@
         <module>spring-cloud-api</module>
         <module>spring-cloud-provider-dept-8001</module>
         <module>spring-cloud-consumer-dept-80</module>
+        <module>spring-cloud-eureka-7001</module>
+        <module>spring-cloud-eureka-7002</module>
+        <module>spring-cloud-eureka-7003</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -57,7 +60,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.1.4.RELEASE</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
@@ -71,14 +73,19 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
         <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
-            <version>3.0.1</version>
+            <version>2.3.0</version>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-core</artifactId>
-            <version>3.0.1</version>
+            <version>2.3.0</version>
         </dependency>
         <dependency>
             <groupId>javax.activation</groupId>
