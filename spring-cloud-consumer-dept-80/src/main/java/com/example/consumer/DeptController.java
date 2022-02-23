@@ -14,7 +14,11 @@ public class DeptController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String URL_PREFIX = "http://localhost:8001";
+    /**
+     * 使用服务名，不能写死
+     */
+    private static final String URL_PREFIX = "http://SPRING-CLOUD-PROVIDER-DEPT";
+    // private static final String URL_PREFIX = "http://localhost:8001";
 
     @GetMapping("dept/get/{id}")
     public Dept get(@PathVariable("id") Long id) {
