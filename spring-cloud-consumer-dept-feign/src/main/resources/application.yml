@@ -6,3 +6,6 @@ eureka:
     register-with-eureka: false # 不注册自己
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka/,http://127.0.0.1:7002/eureka/,http://127.0.0.1:7003/eureka/
+feign:
+  hystrix:
+    enabled: true
