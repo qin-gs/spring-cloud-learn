@@ -1,7 +1,7 @@
 package com.example.consumer;
 
 import com.example.api.pojo.Dept;
-import com.example.service.FeignService;
+import com.example.api.service.FeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
