@@ -1,0 +1,17 @@
+
+# bootstrap.yml 系统级别的配置
+# application.yml 用户级别的配置
+
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:3344
+      name: user
+      profile: dev
+      label: master
+  application:
+    name: spring-cloud-config-client-3355
+
+# 如果 git 上能读取到，这个值会被覆盖掉
+server:
+  port: 3355

@@ -20,6 +20,8 @@
         <module>spring-cloud-provider-dept-hystrix-8001</module>
         <module>spring-cloud-consumer-hystrix-dashboard</module>
         <module>spring-cloud-zuul-9527</module>
+        <module>spring-cloud-config-server-3344</module>
+        <module>spring-cloud-config-client-3355</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -100,5 +102,14 @@
             <version>1.1.1</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
